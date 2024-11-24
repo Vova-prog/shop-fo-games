@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    background-color: lightblue;
+    width: 100%;
+}
+.menu-list{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+.menu-item{
+    position: relative;
+    padding: 0 1em;
+}
+.menu-item a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    padding: 0.75em 1.5em;
+    transition: color 1 ease;
+    font-size: 20px;
+}
+.submenu{
+    list-style-type: none;
+    border-top: 1px solid black;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+}
+.menu-item:hover .submenu{
+    display: block;
+}
+.menu-item a:hover{
+    color: blue;
+}
+.menu-item:hover .submenu{
+    width: 100%;
+    background-color: #666;
+}
+#My_profil{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    padding: 0.75em 1.5em;
+    transition: color 1 ease;
+    font-size: 20px;
+}
+main{
+    display: flex;
+}
+.sidebar{
+    width: 20%;
+    background-color: #666;
+}
+.content{
+    width: 80%;
+}
+.section{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.special_offers{
+    display: flex;
+    justify-content: space-evenly;
+}
+.offer a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    padding: 0.75em 1.5em;
+    transition: color 1 ease;
+}
+
+.categories{
+    display: flex;
+}
+.categoria{
+    text-align: center;
+    padding: 30px;
+    margin: 20px;
+    width: 300px;
+    border: 2px solid gray
+}
+.categoria a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    padding: 0.75em 1.5em;
+    transition: color 1 ease;
+}
+.categoria a:hover{
+    color: blue;
+}
+#fightings{
+    background-color: lightcoral;
+}
+#moba{
+    background-color: lightgoldenrodyellow;
+}
+#rpg{
+    background-color: lightgreen;
+}
+#td{
+    background-color: lightgrey;
+}
+footer{
+    background-color: lightblue;
+}
